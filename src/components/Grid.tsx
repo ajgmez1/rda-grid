@@ -21,7 +21,9 @@ function Grid(props: any) {
           {data.map((d: any, i: number) => (
             <tr key={i} onClick={onClick}>
             {Object.values(d).slice(0,5).map((v: any, j: number) => (
-              <td id={""+i} key={`${i}${j}`}>{typeof v === 'object' ? JSON.stringify(v) : v}</td>
+              <td id={""+i} key={`${i}${j}`}>
+                {typeof v === 'object' ? JSON.stringify(v) : v}
+              </td>
             ))}
             </tr>
           ))}

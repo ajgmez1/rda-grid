@@ -38,10 +38,17 @@
 
 .Grid {
   width: 50vw;
+  overflow: auto;
 }
 .Info {
   width: 50vw;
   overflow: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.Info p {
+  padding-left: 20px;
 }
 
 table td {

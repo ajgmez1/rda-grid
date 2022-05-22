@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import resources from '../../data/resources.json';
+import resources from '../data/resources.json';
 
 function Select(props: any) {
   const options = resources;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Select from './components/Select';
@@ -24,11 +24,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p> Powered by <a target="_blank" className='App-link'
-          href="https://random-data-api.com/documentation"> 
-            Random Data API 
-          </a>
-        </p>
+        <p> <a target="_blank" className='App-link'
+        href="https://random-data-api.com/documentation"> 
+          Random Data API 
+        </a></p>
         <Select search={search} />
       </header>
       <main>
